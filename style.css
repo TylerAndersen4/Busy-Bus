@@ -1,0 +1,85 @@
+.status-bar {
+  height: 20px;
+  width: 100%;
+  background-color: yellow;
+}
+
+.top {
+  height: 53px;
+  width: 100%;
+  background-color: grey;
+}
+
+.top-content {
+  margin: 0 10px;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-content > span:last-child {
+  color: rgba(0, 0, 0, 0);
+}
+
+.top-content > h1 {
+  font-family: helvetica;
+  color: white;
+  font-size: 18px;
+}
+
+.top-content > span  {
+  color: white;
+  font-size: 40px;
+}
+
+.row > span {
+  color: grey;
+}
+
+.row {
+  /*background-color: red;*/
+  height: 69px;
+  border-bottom: 1px solid rgb(236, 236, 236);
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  background-color: purple;
+  margin: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.route {
+  border: .5px solid black;
+  border-radius: 5px;
+  width: 56px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.direction, .eta, .stop {
+  font-family: helvetica;
+  font-size: 15px;
+  letter-spacing: -2%;
+}
+
+.line {
+  font-family: helvetica;
+  font-size: 18px;
+}
+
+section {
+  height: 667px;
+  width: 375px;
+  border: 1px solid black;
+}
