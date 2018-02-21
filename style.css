@@ -1,76 +1,95 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  height: 667px;
+  width: 375px;
+  overflow-y: hidden;
+  box-shadow:0 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.app-header {
+  width: inherit;
+  position: fixed;
+  background-color: rgba(44, 0, 193, 1);
+}
+
 .status-bar {
   height: 20px;
   width: 100%;
-  background-color: yellow;
-}
-
-.top {
-  height: 53px;
-  width: 100%;
-  background-color: grey;
-}
-
-.top-content {
-  margin: 0 10px;
-  height: inherit;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-.top-content > span:last-child {
-  color: rgba(0, 0, 0, 0);
+.status-bar-left {
+  margin-left: 4px;
 }
 
-.top-content > h1 {
+.status-bar-right {
+  margin-right: 4px;
+}
+
+.time {
+  text-align: center;
+  position: absolute; /* no space created for element in the page layout */
+  width: inherit;
+}
+
+.nav-bar {
+  height: 53px;
+}
+
+.nav-bar-content {
+  margin: 0 10px;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-bar-content > h1 {
   font-family: helvetica;
   color: white;
   font-size: 18px;
 }
 
-.top-content > span  {
-  color: white;
-  font-size: 40px;
-}
-
-.row > span {
-  color: grey;
+.route-list {
+  position: relative;
+  top: 73px;
+  overflow-y: scroll;
+  height: calc(667px - 73px);
 }
 
 .row {
-  /*background-color: red;*/
   height: 69px;
   border-bottom: 1px solid rgb(236, 236, 236);
   width: inherit;
   display: flex;
-  flex-direction: row;
+}
+
+.row:hover {
+  background-color: rgba(229, 229, 229, 1);
+  cursor: pointer;
 }
 
 .content {
   display: flex;
-  flex-direction: row;
-  background-color: purple;
   margin: 10px;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
 }
 
 .route {
   border: .5px solid black;
   border-radius: 5px;
-  width: 56px;
+  min-width: 56px;
   height: 36px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.direction, .eta, .stop {
-  font-family: helvetica;
-  font-size: 15px;
-  letter-spacing: -2%;
 }
 
 .line {
@@ -78,8 +97,31 @@
   font-size: 18px;
 }
 
-section {
-  height: 667px;
-  width: 375px;
-  border: 1px solid black;
+.details-group {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 15px;
+}
+
+.details-group > li {
+  font-family: helvetica;
+  font-size: 15px;
+  letter-spacing: -2%;
+}
+
+.direction {
+  justify-content: left;
+  min-width: 40px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.stop {
+  width: 100%;
+}
+
+.eta {
+  width: 80px;
+  text-align: right;
 }

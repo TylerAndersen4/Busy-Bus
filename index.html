@@ -7,104 +7,196 @@
   <title></title>
 </head>
 <body>
-  <section>
-    <div class="status-bar"></div>
-    <div class="top">
-      <div class="top-content">
-        <span>&#10094;</span>
-        <h1>State/Washington</h1>
-        <span>&#10094;</span>
+  <section class="app">
+    <div class="app-header">
+      <div class="time">
+        <img src="time.svg">
       </div>
-    </div>
-    <div class="row">
-      <div class="content">
-        <div class="route">
-          <div class="line">6</div>
+      <div class="status-bar">
+        <div class="status-bar-left">
+          <img src="mobile-signal.svg">
+          <img src="carrier.svg">
+          <img src="wifi-signal.svg">
         </div>
-        <div class="direction">S</div>
-        <div class="stop">79th/South Shore</div>
-        <div class="eta">1 min.</div>
-        <div class="arrow"></div>
-        <span>&#10095;</span>
-      </div>
-    </div>
-    <div class="row">
-      <div class="content">
-        <div class="route">
-          <div class="line">6</div>
+        <div class="status-bar-right">
+          <img src="battery.svg">
         </div>
-        <div class="direction">S</div>
-        <div class="stop">79th/South Shore</div>
-        <div class="eta">1 min.</div>
-        <div class="arrow"></div>
       </div>
-    </div>
-    <div class="row">
-      <div class="content">
-        <div class="route">
-          <div class="line">6</div>
+      <nav class="nav-bar">
+        <div class="nav-bar-content">
+          <img src ="arrow.svg">
+          <h1>State / Washington</h1>
+          <img src ="arrow-blue.svg">
         </div>
-        <div class="direction">S</div>
-        <div class="stop">79th/South Shore</div>
-        <div class="eta">1 min.</div>
-        <div class="arrow"></div>
-      </div>
+      </nav>
     </div>
-    <div class="row">
-      <div class="content">
-        <div class="route">
-          <div class="line">6</div>
-        </div>
-        <div class="direction">S</div>
-        <div class="stop">79th/South Shore</div>
-        <div class="eta">1 min.</div>
-        <div class="arrow"></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="content">
-        <div class="route">
-          <div class="line">6</div>
-        </div>
-        <div class="direction">S</div>
-        <div class="stop">79th/South Shore</div>
-        <div class="eta">1 min.</div>
-        <div class="arrow"></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="content">
-        <div class="route">
-          <div class="line">6</div>
-        </div>
-        <div class="direction">S</div>
-        <div class="stop">79th/South Shore</div>
-        <div class="eta">1 min.</div>
-        <div class="arrow"></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="content">
-        <div class="route">
-          <div class="line">6</div>
-        </div>
-        <div class="direction">S</div>
-        <div class="stop">79th/South Shore</div>
-        <div class="eta">1 min.</div>
-        <div class="arrow"></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="content">
-        <div class="route">
-          <div class="line">6</div>
-        </div>
-        <div class="direction">S</div>
-        <div class="stop">79th/South Shore</div>
-        <div class="eta">1 min.</div>
-        <div class="arrow"></div>
-      </div>
-    </div>
+    <ul class="route-list">
+      <li class="row">
+        <ul class="content">
+          <ul class="route">
+            <li class="line">6</li>
+          </ul>
+          <ul class = "details-group">
+            <li class="direction">S</li>
+            <li class="stop">79th / South Shore</li>
+            <li class="eta">1 min.</li>
+          </ul>
+          <li class="arrow">
+            <img src ="arrow-grey.svg">
+          </li>
+        </ul>
+      </li>
+      <li class="row">
+        <ul class="content">
+          <ul class="route">
+            <li class="line">146X</li>
+          </ul>
+          <ul class = "details-group">
+            <li class="direction">N</li>
+            <li class="stop">Museum Campus</li>
+            <li class="eta">4 min.</li>
+          </ul>
+          <li class="arrow">
+            <img src ="arrow-grey.svg">
+          </li>
+        </ul>
+      </li>
+      <li class="row">
+        <ul class="content">
+          <ul class="route">
+            <li class="line">62</li>
+          </ul>
+          <ul class = "details-group">
+            <li class="direction">S</li>
+            <li class="stop">Harlem</li>
+            <li class="eta">7 min.</li>
+          </ul>
+          <li class="arrow">
+            <img src ="arrow-grey.svg">
+          </li>
+        </ul>
+      </li>
+      <li class="row">
+        <ul class="content">
+          <ul class="route">
+            <li class="line">36</li>
+          </ul>
+          <ul class = "details-group">
+            <li class="direction">N</li>
+            <li class="stop">LaSalle Metra Station</li>
+            <li class="eta">10 min.</li>
+          </ul>
+          <li class="arrow">
+            <img src ="arrow-grey.svg">
+          </li>
+        </ul>
+      </li>
+      <li class="row">
+        <ul class="content">
+          <ul class="route">
+            <li class="line">146X</li>
+          </ul>
+          <ul class = "details-group">
+            <li class="direction">N</li>
+            <li class="stop">Museum Campus</li>
+            <li class="eta">16 min.</li>
+          </ul>
+          <li class="arrow">
+            <img src ="arrow-grey.svg">
+          </li>
+        </ul>
+      </li>
+      <li class="row">
+        <ul class="content">
+          <ul class="route">
+            <li class="line">62</li>
+          </ul>
+          <ul class = "details-group">
+            <li class="direction">S</li>
+            <li class="stop">Harlem</li>
+            <li class="eta">25 min.</li>
+          </ul>
+          <li class="arrow">
+            <img src ="arrow-grey.svg">
+          </li>
+        </ul>
+      </li>
+      <li class="row">
+        <ul class="content">
+          <ul class="route">
+            <li class="line">6</li>
+          </ul>
+          <ul class = "details-group">
+            <li class="direction">S</li>
+            <li class="stop">79th / South Shore</li>
+            <li class="eta">35 min.</li>
+          </ul>
+          <li class="arrow">
+            <img src ="arrow-grey.svg">
+          </li>
+        </ul>
+      </li>
+      <li class="row">
+        <ul class="content">
+          <ul class="route">
+            <li class="line">146X</li>
+          </ul>
+          <ul class = "details-group">
+            <li class="direction">N</li>
+            <li class="stop">Museum Campus</li>
+            <li class="eta">37 min.</li>
+          </ul>
+          <li class="arrow">
+            <img src ="arrow-grey.svg">
+          </li>
+        </ul>
+      </li>
+      <li class="row">
+        <ul class="content">
+          <ul class="route">
+            <li class="line">36</li>
+          </ul>
+          <ul class = "details-group">
+            <li class="direction">N</li>
+            <li class="stop">LaSalle Metra Station</li>
+            <li class="eta">42 min.</li>
+          </ul>
+          <li class="arrow">
+            <img src ="arrow-grey.svg">
+          </li>
+        </ul>
+      </li>
+      <li class="row">
+        <ul class="content">
+          <ul class="route">
+            <li class="line">62</li>
+          </ul>
+          <ul class = "details-group">
+            <li class="direction">S</li>
+            <li class="stop">Harlem</li>
+            <li class="eta">47 min.</li>
+          </ul>
+          <li class="arrow">
+            <img src ="arrow-grey.svg">
+          </li>
+        </ul>
+      </li>
+      <li class="row">
+        <ul class="content">
+          <ul class="route">
+            <li class="line">6</li>
+          </ul>
+          <ul class = "details-group">
+            <li class="direction">S</li>
+            <li class="stop">79th / South Shore</li>
+            <li class="eta">52 min.</li>
+          </ul>
+          <li class="arrow">
+            <img src ="arrow-grey.svg">
+          </li>
+        </ul>
+      </li>
+    </ul>
   </section>
 </body>
 </html>
