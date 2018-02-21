@@ -5,7 +5,9 @@ body {
 
 .app {
   height: 667px;
-  width: 375px;
+  width:375px;
+  min-height: 667px;
+  min-width: 375px;
   overflow-y: hidden;
   box-shadow:0 0px 4px rgba(0, 0, 0, 0.2);
 }
@@ -14,6 +16,7 @@ body {
   width: inherit;
   position: fixed;
   background-color: rgba(44, 0, 193, 1);
+  z-index: 99;
 }
 
 .status-bar {
@@ -98,20 +101,22 @@ body {
 }
 
 .details-group {
-  display: flex;
   width: 100%;
-  justify-content: space-between;
   margin: 0 15px;
 }
 
-.details-group > li {
+.details-group > ul > li {
   font-family: helvetica;
   font-size: 15px;
   letter-spacing: -2%;
 }
 
+.details-group > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
 .direction {
-  justify-content: left;
   min-width: 40px;
   text-align: center;
   margin-right: 5px;
@@ -122,6 +127,11 @@ body {
 }
 
 .eta {
-  width: 80px;
+  width: 90px;
   text-align: right;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
 }
